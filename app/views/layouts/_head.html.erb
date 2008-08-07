@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <% # Title In Title Bar (HTML Title) %>
   <title><%= "#{h @page_title} - " if @page_title %> <%=h @current_site && current_site.name %> - <%= 'Altered Beast'[:beast_title] %></title>
   <%= stylesheet_link_tag 'display' %>
   <%= javascript_include_tag "prototype", "effects", "lowpro", "time", "application", :cache => 'beast' %>
@@ -35,5 +36,6 @@
     <li><%= link_to 'Login'[:login_action], login_path(:to => CGI.escape(request.request_uri)) %></li>
     <% end -%>
   </ul>
+  	<% # Top of Page Where it Says: Altered Beast %>
   <h1><%= link_to 'Altered Beast'[:beast_title], root_path %></h1>
 </div>

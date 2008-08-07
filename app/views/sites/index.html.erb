@@ -1,10 +1,11 @@
 <% content_for :right do %>
-
-<h5><%= 'What is Beast?'[:beast_sidebar_title] %></h5>
+<h5> <% # This is The SideBar, Edit to Your Liking! %>
+<h5><%= 'What is Rails?'[:beast_sidebar_title] %></h5>
 
 <p>
-  <%= 'A small, light-weight forum in Rails with a scary name and a goal of around 500 lines of code when we\'re done.'[:beast_sidebar_body] %>
+  <%= 'Rails is All Powerful, So Git Over it.'[:beast_sidebar_body] %>
 </p>
+<h5> <% # End of Sidebar %>
 
 <% if admin? %>
 <h6><%= 'Admin'[:admin_title] %></h6>
