@@ -2,7 +2,7 @@
 
 The popular rails-based Beast forum...
 
-* updated for Rails 2.1.0(!), Use sudo (if needed) gem install (or update) rails
+* Rails 2.0.2 and 2.1.0 Support (If You Have 2.0.2 Delete boot.rb and environment.rb and Rename environment_2.0.2.rb and boot_2.0.2.rb ==> environment.rb and boot.rb!)
 * using rspec/model_stubbing
 * added a state machine for user logins
 * built-in multi-site support
