@@ -21,7 +21,7 @@ Help desired via git:
 === INSTALLATION
 
     # download altered_beast
-    # install rails 2.1.0 Explained Above
+    # install rails 2.1.0 or 2.0.2
     $ cd /path/to/where/you/put/altered_beast
 		$ mkdir log
     $ rake tmp:create
