@@ -1,6 +1,6 @@
-== Altered Beast
+~~~~> ALTERED BEAST <~~~~
 
-The popular rails-based Beast forum...
+The popular rails-based Beast forum...Rewrote to your standards...
 
 * Rails 2.0.2 and 2.1.0 Support (If You Have 2.0.2 Delete boot.rb and environment.rb and Rename environment_2.0.2.rb and boot_2.0.2.rb ==> environment.rb and boot.rb!)
 * using rspec/model_stubbing
@@ -18,9 +18,10 @@ Help desired via git:
 
     git clone git://git.caboo.se/altered_beast.git
 
-=== INSTALLATION
+~~~~> INSTALLATION <~~~~
 
     # download altered_beast
+		# install rubygems
     # install rails 2.1.0 or 2.0.2
     $ cd /path/to/where/you/put/altered_beast
 		$ mkdir log
@@ -28,3 +29,13 @@ Help desired via git:
     $ rake db:schema:load
 
 First created user will be admin.
+
+~~~~> KNOWN ISSUES <~~~~
+
+* User Can Not Log In Without going to the Login Page, For some reason Sessions is Broke :/
+
+~~~~> TODO LIST <~~~~
+
+* Add Support for Deleting All Settings and Reset all content and Settings
+* Add Way for People to easily Change the "beast_sidebar_title" and "beast_sidebar_body"
+* Add Way to Delete Things More Easily (?)
