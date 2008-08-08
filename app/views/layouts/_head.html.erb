@@ -6,6 +6,7 @@
   <% # Title In Title Bar (HTML Title) %>
   <title><%= "#{h @page_title} - " if @page_title %> <%=h @current_site && current_site.name %> - <%= 'Altered Beast'[:beast_title] %></title>
   <%= stylesheet_link_tag 'display' %>
+  <% # Some Tags For your Forum %>
   <%= javascript_include_tag "prototype", "effects", "lowpro", "time", "application", :cache => 'beast' %>
 <% unless @feed_icons.blank? -%>
   <% @feed_icons.each do |feed| -%>

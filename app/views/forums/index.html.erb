@@ -1,11 +1,11 @@
 <% content_for :right do %>
-
+<h5><% # Sidebar Area, ":beast_sidebar_title" is the Sidebar Title, and ":beast_sidebar_body" is the Content in The Sidebar %>
 <h5><%= 'What is Rails?'[:beast_sidebar_title] %></h5>
 
 <p>
   <%= 'Rails is All Powerful, So Git Over it.'[:beast_sidebar_body] %>
 </p>
-
+<% # Administrator Actions is The Text That You See Below the Sidebar Body if You Are The Admin it includes; "create new forum" etc... %>
 <% if admin? %>
 <h6><%= 'Administrator Actions'[:admin_title] %></h6>
 <p><%= link_to 'Create New Forum'[:create_new_forum], new_forum_path, :class => "utility" %></p>
@@ -13,7 +13,7 @@
 
 <% end %>
 
-<h1 style="margin-top:0;"><%= 'Forums'[:forums_title] %></h1>
+<h1 style="margin-top:0;"><%= 'Threads'[:forums_title] %></h1>
 <p class="subtitle">
 <%= feed_icon_tag "Recent Posts"[:recent_posts], formatted_posts_path(:format => 'rss') %>
 <%= topic_count %>, <%= post_count %> <%# OPTIMIZE ME voice_count %>
