@@ -24,7 +24,7 @@ class TopicsController < ApplicationController
         end
         
         @topic.hit! unless logged_in? && @topic.user_id == current_user.id
-        @posts = @topic.posts.paginate :page => current_page
+        @posts = @topic.posts.paginate ( :page => current_page)
         @post  = Post.new
       end
       format.xml  { render :xml  => @topic }

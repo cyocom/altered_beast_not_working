@@ -1,4 +1,4 @@
-<% @page_title = @topic.title %>
+% @page_title = @topic.title %>
 <% @monitoring = logged_in? && !Monitorship.count(:id, :conditions => ['user_id = ? and topic_id = ? and active = ?', current_user.id, @topic.id, true]).zero? %>
 
 <% content_for :right do -%>
@@ -63,7 +63,10 @@
   <%= '{count} voice(s)'[(count=@topic.voices.size)==1 ? :voice_count : :voices_count, number_with_delimiter(count)] %>
 </p>
 
-<%= pagination @posts %>
+<% for post in @posts %> 
+<%= @naam %> 
+<%= will_paginate @posts %> 
+<% end %>
 
 <a name="<%= dom_id @posts.first %>" id="<%= dom_id @posts.first %>">&nbsp;</a>
 
@@ -129,7 +132,11 @@
 </table>
        
 <%= next_page @posts %>
-<%= pagination @posts %>
+<% for post in @posts %> 
+<%= @naam %> 
+<%= will_paginate @posts %> 
+
+<% end %>
 
 <% if logged_in? %>
 <div id="edit"></div>

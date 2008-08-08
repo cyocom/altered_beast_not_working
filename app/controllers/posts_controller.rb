@@ -2,9 +2,9 @@ class PostsController < ApplicationController
   before_filter :find_parents
   before_filter :find_post, :only => [:edit, :update, :destroy]
 
-  # /posts
-  # /users/1/posts
-  # /forums/1/posts
+   #/posts
+   #/users/1/posts
+   #/forums/1/posts
   # /forums/1/topics/1/posts
   def index
     @posts = (@parent ? @parent.posts : Post).search(params[:q], :page => current_page)
